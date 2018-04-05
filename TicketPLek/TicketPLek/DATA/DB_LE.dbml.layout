@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DB_LE">
+  <DataContextMoniker Name="/DB_LEDataContext" />
+  <nestedChildShapes>
+    <classShape Id="cde8531b-7b47-4b05-b28c-14bb25659448" absoluteBounds="0.5, 2.125, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DB_LEDataContext/MAS_APPROVE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0a3965e2-b132-4d55-878c-661d5eac6f63" absoluteBounds="0.51500000000000012, 2.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="592824eb-0ba8-47b7-9526-67859974b990" absoluteBounds="0.5, 0.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DB_LEDataContext/MAS_DOC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d89eb34b-c6ae-4536-9d59-81b8e3d3d32f" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8ce96936-d57e-40f5-85c2-27f59fe23869" absoluteBounds="0.5, 3.375, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DB_LEDataContext/MAS_SS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4ab7b0a3-31a2-4678-b709-848bbd124d89" absoluteBounds="0.51500000000000012, 3.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8b95893e-e2e0-41a5-a6aa-cf3e47507cb2" absoluteBounds="3, 0.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DB_LEDataContext/TASK_SUB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b3453c64-c0e3-4d8d-b154-8fa5f1273149" absoluteBounds="3.0149999999999997, 0.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c2ecf1a5-4674-40ac-8eef-784d558bb5ad" absoluteBounds="2.875, 2.125, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/DB_LEDataContext/TASK_MAIN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="247bd371-77a2-499f-bf6b-aec04b77908a" absoluteBounds="2.89, 2.585, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="59e7216e-f57a-41a4-b5aa-dd2c3e239413" absoluteBounds="5.5, 0.875, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/DB_LEDataContext/VW_TICKET" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aa0e8ec8-cf14-43c7-a1bd-be700b7522f0" absoluteBounds="5.515, 1.335, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

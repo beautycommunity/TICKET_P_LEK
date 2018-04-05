@@ -1,0 +1,96 @@
+﻿@using TicketPLek.Models
+@model TicketPLek.Models.TicketModel
+
+@{
+    ViewBag.Title = "CreateTicket";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-md-9">
+        <h2>+ New Ticket</h2>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-md-8">
+
+        <section id="newTicket">
+
+            @using (Html.BeginForm("CreateTicket", "Ticket", FormMethod.Post, new { @class = "form-horizontal", enctype = "multipart/form-data" }))
+    {
+
+        <hr />
+
+        <div class="form-group">
+            <div class="col-md-12">
+                @Html.LabelFor(m => Model.Add.TicketName, new { @class = "col-md control-label" })
+                <br />
+                @Html.TextBoxFor(m => Model.Add.TicketName, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Add.TicketName, "", new { @class = "text-danger" })
+                <span class="field-validation-valid text-danger" data-valmsg-for="JT_ID" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-12">
+                @Html.LabelFor(m => Model.Add.Detail, new { @class = "col-md control-label" })
+                @Html.TextAreaFor(m => Model.Add.Detail, new { @class = "form-control custom-control", @rows = "5" })
+                @Html.ValidationMessageFor(model => model.Add.Detail, "", new { @class = "text-danger" })
+                <span class="field-validation-valid text-danger" data-valmsg-for="JT_ID" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-12">
+                @Html.LabelFor(m => Model.Add.TicketSdate, new { @class = "col-md control-label" })
+                <br />
+                @Html.EditorFor(model => model.Add.TicketSdate, new { htmlAttributes = new { @class = "form-control", @Value = "15/03/2018" } })
+                @Html.ValidationMessageFor(model => model.Add.TicketSdate, "", new { @class = "text-danger" })
+                <span class="field-validation-valid text-danger" data-valmsg-for="JT_ID" data-valmsg-replace="true"></span>
+
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-12">
+                @Html.LabelFor(m => Model.Add.TicketFdate, new { @class = "col-md control-label" })
+                <br />
+                @Html.EditorFor(model => model.Add.TicketFdate, new { htmlAttributes = new { @class = "form-control", @Value = "15/03/2018" } })
+                @Html.ValidationMessageFor(model => model.Add.TicketFdate, "", new { @class = "text-danger" })
+                <span class="field-validation-valid text-danger" data-valmsg-for="JT_ID" data-valmsg-replace="true"></span>
+
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-12">
+                @*@Html.LabelFor(m => Model.Add.TicketIT, new { @class = "col-md control-label" })
+                <br />
+                @Html.TextBoxFor(m => Model.Add.TicketIT, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Add.TicketIT, "", new { @class = "text-danger" })
+                <span class="field-validation-valid text-danger" data-valmsg-for="JT_ID" data-valmsg-replace="true"></span>*@
+            </div>
+        </div>
+
+
+        <br />
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <input type="submit" value="บันทึก" class="btn btn-primary" />
+                <a href="@Url.Action("Index")" class="btn btn-default">ยกเลิก</a>
+            </div>
+        </div>
+
+        <br />
+}
+
+        </section>
+
+    </div>
+
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
